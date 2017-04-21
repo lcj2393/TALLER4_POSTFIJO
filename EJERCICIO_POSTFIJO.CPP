@@ -173,7 +173,7 @@ void imprimirPila(Nodo *pila){
     }
 }
 void mostrarResultadosOperacionPostfijo(Nodo *&pila, char miArreglo[tamano]){
-    printf("%s =  %0.f",miArreglo, pila->dato);
+    printf("%s =  %0.1f",miArreglo, pila->dato);
 }
 float convertirCadenaNumero(char numero[tamano]){
     float num;
