@@ -31,29 +31,21 @@ float eliminarElementoPila(Nodo *&);
 void imprimirPila(Nodo *);
 float convertirCadenaNumero(char [tamano]);
 
-/*
-* Funcion Principal
-*/
 int main(){
-    system("color f1");
     menu();
     return 0;
 }
-
-/*
-* Implementacion de Funciones
-*/
 
 void menu(){
     Nodo *pila = NULL;
     char miArreglo[tamano];
     int opcion;
     do{
-        printf("\n---MENU---\n");
+        printf("\n\t\t---MENU NOTACION POSTFIJA---\n\n");
         printf("\n1. Ingresar Expresion");
-        printf("\n2. Mostrar Expresion");
-        printf("\n3. Hacer Operacion Postfijo");
-        printf("\n4. Mostrar Resultados Operacion Postfijo");
+        printf("\n2. Mostrar Expresion Ingresada");
+        printf("\n3. Hacer Operacion Postfija");
+        printf("\n4. Mostrar Resultados Operacion Postfija");
         printf("\n0. Salir");
         printf("\nIngrese una opcion: ");
         scanf("%d", &opcion);
